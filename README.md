@@ -1,43 +1,46 @@
-# World-Layoffs-Data-Analysis-SQL-Data-Cleaning-EDA-Project
-Overview:
+🌍 World Layoffs Data Analysis – SQL Cleaning & EDA
 
-SQL data cleaning and exploratory data analysis on global layoffs dataset. Includes duplicate handling, data standardization, null treatment, and business-driven insights using MySQL (CTEs, Window Functions, Aggregations).
-Global Layoffs Data Analysis (SQL Project):
+Turning messy global layoffs data into structured business insights using SQL.
 
+ Project Summary
 
-Key Insights:
+📈 Analyzed layoffs globally (2020–2023)
+Explored workforce reduction trends across multiple years to understand the scale and timing of global layoffs.
 
-1: Certain industries (e.g., Tech, Crypto) were most affected by layoffs.
-2: Several companies experienced 100% workforce reductions, showing complete shutdowns.
-3: Layoffs often correlate with funding stages, highlighting risk patterns in early-stage vs. post-IPO companies.
-4: Monthly and yearly trends revealed spikes during economic downturns.
-5: Rolling cumulative layoffs help visualize momentum and severity over time.
+📊 Identified industry & geographic patterns
+Detected which industries and countries were most affected and how layoffs varied across funding stages.
 
-Workflow:
+🧠 Used SQL to clean messy real-world data
+Handled duplicates using window functions, standardized inconsistent values, treated nulls, and transformed raw text dates into structured formats.
 
-1: Data Cleaning
+🏆 Ranked top impacted companies yearly
+Applied ranking logic (DENSE_RANK) to identify the most affected companies each year and built rolling monthly trends to track layoff momentum.
 
--Removing duplicates:  Used ROW_NUMBER() over partitions, staged data for safe deduplication.
--Standardization:  Trimmed company names, normalized industry categories (e.g., Crypto), cleaned country names, converted   dates to proper DATE format.
--Null/Blank Handling:  Replaced empty strings with NULL, filled missing industry data via self-joins, removed irrelevant rows.
--Structural Cleanup:  Dropped helper columns; finalized dataset layoffs_staging2.
+🔍 Key Insights
 
-2: Exploratory Data Analysis (EDA):
+Certain industries were consistently more vulnerable to layoffs.
 
--Analyzed layoffs by company, industry, country, and funding stage.
--Tracked yearly and monthly trends, including rolling totals with window functions.
--Identified top 5 most affected companies per year using DENSE_RANK().
+Multiple companies experienced 100% workforce reductions (complete shutdowns).
 
-Tools & Techniques:
+Layoff waves aligned with broader economic slowdowns.
 
-SQL & MySQL
--Window Functions: ROW_NUMBER(), DENSE_RANK(), rolling SUM()
--CTEs (Common Table Expressions)
--Aggregate Functions
--Data Cleaning & Standardization
--Exploratory Data Analysis (EDA)
+Funding stage influenced layoff behavior patterns.
 
+Rolling monthly totals revealed compounding momentum rather than isolated events.
 
-Author:
+🛠 Technical Skills Demonstrated:
+
+SQL | MySQL | Data Cleaning | Window Functions
+ROW_NUMBER() | DENSE_RANK() | Rolling SUM()
+CTEs | Aggregations | Business-Focused EDA
+
+📂 Repository Contents
+
+world_layoff_project.sql – Full data cleaning & analysis workflow
+
+README.md – Project documentation
+
+👩‍💻 About Me:
+
 Maryam Najeeb – Aspiring Business Intelligence Analyst | Business & E-commerce Focus
 Passionate about turning raw data into actionable insights.
