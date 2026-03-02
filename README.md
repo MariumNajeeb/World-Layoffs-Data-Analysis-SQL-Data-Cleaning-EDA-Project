@@ -1,3 +1,4 @@
+
 🌍 World Layoffs Data Analysis – SQL Cleaning & EDA
 
 Turning messy global layoffs data into structured business insights using SQL.
@@ -27,6 +28,24 @@ Layoff waves aligned with broader economic slowdowns.
 Funding stage influenced layoff behavior patterns.
 
 Rolling monthly totals revealed compounding momentum rather than isolated events.
+
+---------------------------------------------------------------------------------
+
+Yearly company layoffs Ordered by highest layoffs to find worst-hit company-year combinations:
+
+<img width="1920" height="973" alt="World_layoff_project4" src="https://github.com/user-attachments/assets/094cf502-3699-4d3e-94bb-e7c7ca6b4119" />
+
+-- Aggregate total layoffs per company per year
+-- Rank companies within each year based on total layoffs
+-- Select Top 5 most affected companies per year
+
+<img width="1920" height="973" alt="World_layoff_project3" src="https://github.com/user-attachments/assets/7928a764-0ce6-4d83-8bd7-268c33ebc6a9" />
+
+Create CTE to calculate monthly layoffs, Then compute rolling (cumulative) layoffs over time
+
+<img width="1920" height="973" alt="World_layoff_project2" src="https://github.com/user-attachments/assets/ba6447d6-a075-4154-b3ad-34a3cb041a5d" />
+
+-----------------------------------------------------------------------------------------------------------------
 
 🛠 Technical Skills Demonstrated:
 
